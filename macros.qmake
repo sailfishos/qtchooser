@@ -1,0 +1,25 @@
+#
+# QMake macros
+#
+
+%qmake \
+  qmake -makefile \\\
+  "QMAKE_CFLAGS_RELEASE=${CFLAGS:-%optflags}" \\\
+  "QMAKE_CFLAGS_DEBUG=${CFLAGS:-%optflags}" \\\
+  "QMAKE_CXXFLAGS_RELEASE=${CXXFLAGS:-%optflags}" \\\
+  "QMAKE_CXXFLAGS_DEBUG=${CXXFLAGS:-%optflags}" \\\
+  QMAKE_STRIP=: \\\
+  PREFIX=%{_prefix}
+
+%qmake5 \
+  qmake -qt=5 -makefile \\\
+  "QMAKE_CFLAGS_RELEASE=${CFLAGS:-%optflags}" \\\
+  "QMAKE_CFLAGS_DEBUG=${CFLAGS:-%optflags}" \\\
+  "QMAKE_CXXFLAGS_RELEASE=${CXXFLAGS:-%optflags}" \\\
+  "QMAKE_CXXFLAGS_DEBUG=${CXXFLAGS:-%optflags}" \\\
+  QMAKE_STRIP=: \\\
+  PREFIX=%{_prefix}
+
+
+%qmake_install make install INSTALL_ROOT=%{buildroot}
+

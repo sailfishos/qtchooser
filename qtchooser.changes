@@ -1,0 +1,12 @@
+* Mon Apr 01 2013 Carsten Munk <carsten.munk@jollamobile.com> - 26-1
+- Make it match with Mer 
+
+* Wed Mar 06 2013 Rex Dieter <rdieter@fedoraproject.org> 26-1
+- qtchooser-26
+
+* Thu Jan 24 2013 Rex Dieter <rdieter@fedoraproject.org> 9-2
+- move binaries to /usr/lib/qtchooser, keeps this optional, allows
+  users to install/opt-in instead
+
+* Mon Dec 31 2012 Rex Dieter <rdieter@fedoraproject.org> 9-1
+- first try
