@@ -1,3 +1,7 @@
+* Mon Apr 08 2013 Juha Kallioinen <juha.kallioinen@jollamobile.com> - 26-1
+- Requires qt-default
+- %qmake macro sets -qt=4
+
 * Mon Apr 01 2013 Carsten Munk <carsten.munk@jollamobile.com> - 26-1
 - Make it match with Mer 
 

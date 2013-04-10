@@ -3,7 +3,7 @@
 #
 
 %qmake \
-  qmake -makefile \\\
+  qmake -qt=4 -makefile \\\
   "QMAKE_CFLAGS_RELEASE=${CFLAGS:-%optflags}" \\\
   "QMAKE_CFLAGS_DEBUG=${CFLAGS:-%optflags}" \\\
   "QMAKE_CXXFLAGS_RELEASE=${CXXFLAGS:-%optflags}" \\\

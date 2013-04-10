@@ -10,6 +10,8 @@ License: LGPLv2 or GPLv3
 URL:	 http://macieira.org/qtchooser
 Source0: http://macieira.org/qtchooser/qtchooser-%{version}-%{git}.tar.gz
 Source1: macros.qmake
+Requires: qt-default
+
 %description
 %{summary}
 
