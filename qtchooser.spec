@@ -4,7 +4,7 @@
 Name:	 qtchooser
 Summary: Qt Chooser
 Version: 26
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 License: LGPLv2 or GPLv3
 URL:	 http://macieira.org/qtchooser
@@ -30,6 +30,14 @@ mkdir -p %{buildroot}%{_sysconfdir}/xdg/qtchooser
 mkdir -p %{buildroot}%{_sysconfdir}/rpm/
 cp %SOURCE1 %{buildroot}%{_sysconfdir}/rpm/macros.qmake
 
+# Add configuration file for qt4
+echo "%{_libdir}/qt4/bin" > %{buildroot}%{_sysconfdir}/xdg/qtchooser/4.conf
+echo "%{_libdir}" >> %{buildroot}%{_sysconfdir}/xdg/qtchooser/4.conf
+
+# Add configuration file for qt5
+echo "%{_libdir}/qt5/bin" > %{buildroot}%{_sysconfdir}/xdg/qtchooser/5.conf
+echo "%{_libdir}" >> %{buildroot}%{_sysconfdir}/xdg/qtchooser/5.conf
+
 ## env vars
 #QT_SELECT
 #QTCHOOSER_RUNTOOL
@@ -39,6 +47,8 @@ cp %SOURCE1 %{buildroot}%{_sysconfdir}/rpm/macros.qmake
 %doc LGPL_EXCEPTION.txt LICENSE.GPL LICENSE.LGPL
 %dir %{_sysconfdir}/xdg/qtchooser
 %{_sysconfdir}/rpm/macros.qmake
+%{_sysconfdir}/xdg/qtchooser/5.conf
+%{_sysconfdir}/xdg/qtchooser/4.conf
 %{_bindir}/qtchooser
 %{_bindir}/assistant
 %{_bindir}/designer

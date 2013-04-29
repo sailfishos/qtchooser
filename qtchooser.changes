@@ -1,3 +1,7 @@
+* Mon Apr 29 2013 Juha Kallioinen <juha.kallioinen@jollamobile.com> - 26-2
+- %qmake and %qmake5 macros export QT_SELECT
+- qtchooser installs /etc/xdg/qtchooser/[45].conf
+
 * Mon Apr 08 2013 Juha Kallioinen <juha.kallioinen@jollamobile.com> - 26-1
 - Requires qt-default
 - %qmake macro sets -qt=4
