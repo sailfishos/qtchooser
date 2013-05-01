@@ -22,6 +22,8 @@
   QMAKE_STRIP=: \\\
   PREFIX=%{_prefix}
 
+# qt4 specific install macro
+%qmake_install export QT_SELECT=4; make install INSTALL_ROOT=%{buildroot}
 
-%qmake_install make install INSTALL_ROOT=%{buildroot}
-
+# qt5 specific install macro
+%qmake5_install export QT_SELECT=5; make install INSTALL_ROOT=%{buildroot}

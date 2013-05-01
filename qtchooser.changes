@@ -1,3 +1,7 @@
+* Wed May 01 2013 Juha Kallioinen <juha.kallioinen@jollamobile.com> - 26-3
+- separate %qmake_install and %qmake5_install macros, which now also
+  export QT_SELECT
+
 * Mon Apr 29 2013 Juha Kallioinen <juha.kallioinen@jollamobile.com> - 26-2
 - %qmake and %qmake5 macros export QT_SELECT
 - qtchooser installs /etc/xdg/qtchooser/[45].conf

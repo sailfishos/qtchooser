@@ -4,7 +4,7 @@
 Name:	 qtchooser
 Summary: Qt Chooser
 Version: 26
-Release: 2%{?dist}
+Release: 3%{?dist}
 
 License: LGPLv2 or GPLv3
 URL:	 http://macieira.org/qtchooser
