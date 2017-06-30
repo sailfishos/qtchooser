@@ -1,3 +1,7 @@
+* Thu Jun 22 2017 Martin Kampas <martin.kampas@jollamobile.com> - 26-4
+- Add DEFINES+=QT_MESSAGELOGCONTEXT to %qmake5 macro to enable logging message
+  origin in devel builds.  Contribute to JB#39019
+
 * Wed May 01 2013 Juha Kallioinen <juha.kallioinen@jollamobile.com> - 26-3
 - separate %qmake_install and %qmake5_install macros, which now also
   export QT_SELECT

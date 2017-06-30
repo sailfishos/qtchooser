@@ -19,6 +19,9 @@
   "QMAKE_CFLAGS_DEBUG=${CFLAGS:-%optflags}" \\\
   "QMAKE_CXXFLAGS_RELEASE=${CXXFLAGS:-%optflags}" \\\
   "QMAKE_CXXFLAGS_DEBUG=${CXXFLAGS:-%optflags}" \\\
+  %if 0%{?qa_stage_devel:1} \
+  DEFINES+=QT_MESSAGELOGCONTEXT \\\
+  %endif \
   QMAKE_STRIP=: \\\
   PREFIX=%{_prefix}
 
