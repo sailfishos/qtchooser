@@ -10,7 +10,8 @@
   "QMAKE_CXXFLAGS_RELEASE=${CXXFLAGS:-%optflags}" \\\
   "QMAKE_CXXFLAGS_DEBUG=${CXXFLAGS:-%optflags}" \\\
   QMAKE_STRIP=: \\\
-  PREFIX=%{_prefix}
+  PREFIX=%{_prefix} \\\
+  LIBDIR=%{_libdir}
 
 %qmake5 \
   export QT_SELECT=5; \\\
@@ -23,10 +24,11 @@
   DEFINES+=QT_MESSAGELOGCONTEXT \\\
   %endif \
   QMAKE_STRIP=: \\\
-  PREFIX=%{_prefix}
+  PREFIX=%{_prefix} \\\
+  LIBDIR=%{_libdir}
 
 # qt4 specific install macro
-%qmake_install export QT_SELECT=4; make install INSTALL_ROOT=%{buildroot}
+%qmake_install export QT_SELECT=4; make install INSTALL_ROOT=%{buildroot} INSTALL_LIBDIR=%{buildroot}/%{_libdir}
 
 # qt5 specific install macro
-%qmake5_install export QT_SELECT=5; make install INSTALL_ROOT=%{buildroot}
+%qmake5_install export QT_SELECT=5; make install INSTALL_ROOT=%{buildroot} INSTALL_LIBDIR=%{buildroot}/%{_libdir}
