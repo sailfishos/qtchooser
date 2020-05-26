@@ -1,3 +1,6 @@
+* Tue May 26 2020 Niels Breet <niels.breet@jolla.com> - 26-5
+- Add INSTALL_LIBDIR to qmake5_install macro. Contributes to JB#49681
+
 * Thu Jun 22 2017 Martin Kampas <martin.kampas@jollamobile.com> - 26-4
 - Add DEFINES+=QT_MESSAGELOGCONTEXT to %qmake5 macro to enable logging message
   origin in devel builds.  Contribute to JB#39019
