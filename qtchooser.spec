@@ -21,6 +21,9 @@ Requires: qt-default
 
 
 %build
+export CFLAGS="$CFLAGS -D_FILE_OFFSET_BITS=64"
+export CXXFLAGS="$CXXFLAGS -D_FILE_OFFSET_BITS=64"
+export CPPFLAGS="$CPPFLAGS -D_FILE_OFFSET_BITS=64"
 make %{?_smp_mflags}
 
 %install
