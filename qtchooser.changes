@@ -1,3 +1,6 @@
+* Thu Jun 04 2020 Matti Kosola <matti.kosola@jolla.com> - 26-6
+- Compile with largefile support. JB#49745
+
 * Tue May 26 2020 Niels Breet <niels.breet@jolla.com> - 26-5
 - Add INSTALL_LIBDIR to qmake5_install macro. Contributes to JB#49681
 
