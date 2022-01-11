@@ -1,3 +1,6 @@
+* Tue Jan 11 2022 Pekka Vuorela <pekka.vuorela@jolla.com> - 26-7
+- Include license files as %license. JB#55991
+
 * Thu Jun 04 2020 Matti Kosola <matti.kosola@jolla.com> - 26-6
 - Compile with largefile support. JB#49745
 
