@@ -4,7 +4,7 @@
 Name:	 qtchooser
 Summary: Qt Chooser
 Version: 26
-Release: 6
+Release: 7
 
 License: LGPLv2 or GPLv3
 URL:	 http://macieira.org/qtchooser
@@ -47,7 +47,7 @@ echo "%{_libdir}" >> %{buildroot}%{_sysconfdir}/xdg/qtchooser/5.conf
 
 %files
 %defattr(-,root,root,-)
-%doc LGPL_EXCEPTION.txt LICENSE.GPL LICENSE.LGPL
+%license LGPL_EXCEPTION.txt LICENSE.GPL LICENSE.LGPL
 %dir %{_sysconfdir}/xdg/qtchooser
 %{_sysconfdir}/rpm/macros.qmake
 %{_sysconfdir}/xdg/qtchooser/5.conf
